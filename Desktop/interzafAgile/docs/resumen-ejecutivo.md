@@ -366,7 +366,7 @@ El proyecto **Lazarus Landing Page** ha sido completado exitosamente, cumpliendo
 
 ---
 
-**Fecha de este resumen**: 3 de Diciembre de 2025  
+**Fecha de este resumen**: 9 de Diciembre de 2025  
 **Próxima entrega**: 10 de Diciembre de 2025 a las 23:59h  
 **Review con cliente**: 11 de Diciembre de 2025 (no presencial - vídeo)
 
