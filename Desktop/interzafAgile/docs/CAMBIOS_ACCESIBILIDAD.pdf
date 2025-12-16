@@ -1,0 +1,44 @@
+CAMBIOS DE ACCESIBILIDAD Y COLORES
+==================================
+
+1. CONTRASTE Y ACCESIBILIDAD (WCAG AA/AAA)
+------------------------------------------
+- Se ajustaron todos los colores de fondo y texto para cumplir con los estándares de contraste AA/AAA.
+- El texto principal y secundario ahora es negro o gris oscuro sobre fondos claros.
+- Los botones y enlaces tienen colores de alto contraste (verde #166534 o azul accesible, texto blanco).
+- El footer tiene fondo oscuro y texto blanco para máximo contraste.
+
+2. BOTONES Y ENLACES
+--------------------
+- Todos los botones principales, secundarios, de inicio de sesión y de registro usan el mismo color de fondo accesible y texto blanco.
+- Se eliminaron los aria-label redundantes en botones con texto visible.
+- Se unificó el tamaño y estilo de los botones para coherencia visual y accesibilidad táctil.
+
+3. CHECKS Y FORMULARIOS
+-----------------------
+- Los checks usan el mismo color accesible que los botones.
+- Los campos de formulario mantienen contraste suficiente entre texto y fondo.
+
+4. ESTRUCTURA SEMÁNTICA
+-----------------------
+- Se añadió landmark <main> y se corrigieron IDs de anclas para navegación interna accesible.
+
+5. PALETA DE COLORES FINAL
+--------------------------
+- Fondo general: camel claro (#F5E9DA) y blanco accesible (#F8F9FA)
+- Fondo de secciones alternas: gris claro accesible (#E5E5E5)
+- Texto principal: negro puro (#000000)
+- Texto secundario: gris oscuro (#222222)
+- Botones: verde accesible (#166534) con texto blanco
+- Enlaces: azul accesible (#0056B3) con hover azul oscuro
+- Footer: fondo gris muy oscuro (#181818), texto blanco puro
+- Checks: verde accesible (#166534)
+
+6. OTROS AJUSTES VISUALES
+-------------------------
+- Tamaños y paddings: Se igualó el tamaño de todos los botones principales para coherencia visual.
+- Bordes y radios: Botones y tarjetas con bordes redondeados para mejor usabilidad.
+
+RESULTADO
+---------
+La web ahora es visualmente coherente, cumple con los estándares de accesibilidad de color y estructura, y es más usable para todos los usuarios.

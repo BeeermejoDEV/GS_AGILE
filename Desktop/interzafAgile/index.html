@@ -18,11 +18,9 @@
                 <img src="img/logo.png" alt="Lazarus Logo" class="nav__logo-img">
                 <span class="nav__logo-text">Lazarus</span>
             </div>
-            
-            <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation">
+            <button class="nav__toggle" id="nav-toggle" aria-label="Abrir o cerrar menú de navegación" aria-controls="nav-menu" aria-expanded="false">
                 <span class="nav__toggle-icon"></span>
             </button>
-
             <ul class="nav__menu" id="nav-menu">
                 <li class="nav__item">
                     <a href="#productos" class="nav__link">Productos</a>
@@ -39,7 +37,7 @@
             </ul>
         </nav>
     </header>
-
+    <main id="main-content" role="main">
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
@@ -71,7 +69,6 @@
             </div>
         </div>
     </section>
-
     <!-- Sección: Conectando Agricultores -->
     <section class="section section--agricultores" id="productos">
         <div class="container">
@@ -80,7 +77,6 @@
                 Nuestra plataforma permite a los agricultores vender directamente sus productos 
                 a restaurantes, garantizando precios justos y eliminando intermediarios.
             </p>
-            
             <div class="features">
                 <div class="features__grid">
                     <div class="feature-card">
@@ -90,7 +86,6 @@
                             Cultivos sostenibles y orgánicos que respetan el medio ambiente
                         </p>
                     </div>
-                    
                     <div class="feature-card">
                         <div class="feature-card__icon">💰</div>
                         <h3 class="feature-card__title">Precios Dignos</h3>
@@ -98,7 +93,6 @@
                             Los agricultores reciben el valor justo por su trabajo
                         </p>
                     </div>
-                    
                     <div class="feature-card">
                         <div class="feature-card__icon">🚜</div>
                         <h3 class="feature-card__title">Directo del Campo</h3>
@@ -106,7 +100,6 @@
                             Productos frescos sin intermediarios, del campo a tu cocina
                         </p>
                     </div>
-                    
                     <div class="feature-card">
                         <div class="feature-card__icon">🤝</div>
                         <h3 class="feature-card__title">Conexión Directa</h3>
@@ -115,15 +108,16 @@
                         </p>
                     </div>
                 </div>
-
                 <div class="cta-section">
-                    <button class="btn btn--large btn--primary">Soy Agricultor</button>
-                    <button class="btn btn--large btn--outline">Soy Restaurante</button>
+                    <button class="btn btn--large btn--primary" type="button">Soy Agricultor</button>
+                    <button class="btn btn--large btn--outline" type="button">Soy Restaurante</button>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Sección: Servicios (ancla vacía para accesibilidad) -->
+    <section id="servicios" style="position:relative;top:-80px;height:1px;width:1px;overflow:hidden" aria-hidden="true"></section>
     <!-- Sección: Confía en nosotros -->
     <section class="section section--confianza" id="nosotros">
         <div class="container">
@@ -182,6 +176,8 @@
 
     <!-- Sección: Registro / CTA Principal -->
     <section class="section section--registro" id="registro">
+    <!-- Sección: Contacto (ancla vacía para accesibilidad) -->
+    <section id="contacto" style="position:relative;top:-80px;height:1px;width:1px;overflow:hidden" aria-hidden="true"></section>
         <div class="container">
             <div class="registro">
                 <div class="registro__content">
@@ -273,7 +269,6 @@
                         Conectando el campo con la mesa desde 2026
                     </p>
                 </div>
-                
                 <div class="footer__section">
                     <h4 class="footer__title">Navegación</h4>
                     <ul class="footer__links">
@@ -283,7 +278,6 @@
                         <li><a href="#contacto" class="footer__link">Contacto</a></li>
                     </ul>
                 </div>
-                
                 <div class="footer__section">
                     <h4 class="footer__title">Legal</h4>
                     <ul class="footer__links">
@@ -292,7 +286,6 @@
                         <li><a href="#" class="footer__link">Cookies</a></li>
                     </ul>
                 </div>
-                
                 <div class="footer__section">
                     <h4 class="footer__title">Síguenos</h4>
                     <div class="footer__social">
@@ -314,7 +307,6 @@
                     </div>
                 </div>
             </div>
-            
             <div class="footer__bottom">
                 <p class="footer__copyright">
                     &copy; 2025 Lazarus. Todos los derechos reservados. Lanzamiento previsto para 2026.
@@ -322,7 +314,7 @@
             </div>
         </div>
     </footer>
-
+    </main>
     <!-- Scripts -->
     <script src="js/main.js"></script>
 </body>
