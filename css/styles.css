@@ -1,29 +1,31 @@
-/* =========================================
-   VARIABLES CSS
-   ========================================= */
+/* 
+=========================================
+VARIABLES CSS
+========================================= 
+*/
 :root {
     /* Colores principales */
-    --color-primary: #4CAF50;
-    --color-primary-dark: #388E3C;
-    --color-primary-light: #81C784;
-    --color-secondary: #FF9800;
-    --color-secondary-dark: #F57C00;
+    --color-primary: #166534; /* Azul accesible*/
+    --color-primary-dark: #104826;
+    --color-primary-light: #3ca35c;
+    --color-secondary: #166534; /* Azul accesible */
+    --color-secondary-dark: #166534;
     
     /* Colores neutros */
-    --color-white: #FFFFFF;
+    --color-white: #F8F9FA; /* Fondo general más claro y accesible */
     --color-black: #000000;
-    --color-gray-100: #F5F5F5;
-    --color-gray-200: #EEEEEE;
-    --color-gray-300: #E0E0E0;
-    --color-gray-400: #BDBDBD;
-    --color-gray-500: #9E9E9E;
-    --color-gray-600: #757575;
-    --color-gray-700: #616161;
-    --color-gray-800: #424242;
-    --color-gray-900: #212121;
+    --color-gray-100: #E5E5E5; /* Gris claro accesible */
+    --color-gray-200: #CCCCCC;
+    --color-gray-300: #B3B3B3;
+    --color-gray-400: #888888;
+    --color-gray-500: #666666;
+    --color-gray-600: #444444;
+    --color-gray-700: #222222;
+    --color-gray-800: #181818;
+    --color-gray-900: #000000;
     
     /* Colores de estado */
-    --color-success: #4CAF50;
+    --color-success: #166534; /* Checks verdes ahora azules */
     --color-warning: #FF9800;
     --color-error: #F44336;
     --color-info: #2196F3;
@@ -99,7 +101,7 @@ body {
     font-size: var(--font-size-base);
     font-weight: var(--font-weight-normal);
     line-height: 1.6;
-    color: var(--color-gray-800);
+    color: var(--color-gray-900);
     background-color: var(--color-white);
     overflow-x: hidden;
 }
@@ -127,7 +129,7 @@ button {
 }
 
 /* =========================================
-   UTILITIES
+   UTLIDADES
    ========================================= */
 .container {
     width: 100%;
@@ -257,7 +259,7 @@ button {
     display: inline-block;
     font-size: var(--font-size-lg);
     font-weight: var(--font-weight-medium);
-    color: var(--color-gray-700);
+    color: var(--color-gray-900) !important;
     padding: var(--spacing-xs) 0;
     transition: color var(--transition-fast);
 }
@@ -278,6 +280,24 @@ button {
 .nav__link--cta:hover {
     background-color: var(--color-primary-dark);
     color: var(--color-white);
+}
+
+/* Botón especial para 'Inicio de sesión' y 'Soy Restaurante' */
+.nav__link--cta,
+.btn--outline {
+    background-color: var(--color-primary) !important;
+    color: #fff !important;
+    border-color: var(--color-primary) !important;
+    font-weight: var(--font-weight-bold) !important;
+    font-size: var(--font-size-lg) !important;
+    padding: var(--spacing-md) var(--spacing-xl) !important;
+    border-radius: var(--border-radius-full) !important;
+}
+
+.nav__link--cta:hover,
+.btn--outline:hover {
+    background-color: var(--color-primary-dark) !important;
+    color: #fff !important;
 }
 
 @media (min-width: 768px) {
@@ -340,7 +360,7 @@ button {
 
 .hero__subtitle {
     font-size: var(--font-size-lg);
-    color: var(--color-gray-600);
+    color: var(--color-gray-700) !important;
     margin-bottom: var(--spacing-lg);
     max-width: 600px;
     margin-left: auto;
@@ -419,38 +439,38 @@ button {
 }
 
 .btn--primary {
-    background-color: var(--color-primary);
-    color: var(--color-white);
+    background-color: var(--color-primary) !important;
+    color: #fff !important;
 }
 
 .btn--primary:hover {
-    background-color: var(--color-primary-dark);
+    background-color: var(--color-primary-dark) !important;
     transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
 }
 
 .btn--secondary {
-    background-color: var(--color-white);
-    color: var(--color-primary);
-    border-color: var(--color-primary);
+    background-color: var(--color-secondary) !important;
+    color: #fff !important;
+    border-color: var(--color-secondary) !important;
+    font-weight: var(--font-weight-bold) !important;
 }
 
 .btn--secondary:hover {
-    background-color: var(--color-primary);
-    color: var(--color-white);
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
+    background-color: var(--color-secondary-dark) !important;
+    color: #fff !important;
 }
 
 .btn--outline {
-    background-color: transparent;
-    color: var(--color-primary);
-    border-color: var(--color-primary);
+    background-color: var(--color-primary) !important;
+    color: #fff !important;
+    border-color: var(--color-primary) !important;
+    font-weight: var(--font-weight-bold) !important;
 }
 
 .btn--outline:hover {
-    background-color: var(--color-primary);
-    color: var(--color-white);
+    background-color: var(--color-primary-dark);
+    color: #fff;
 }
 
 .btn--large {
@@ -470,11 +490,11 @@ button {
 }
 
 .section--agricultores {
-    background-color: var(--color-white);
+    background-color: var(--color-white) !important;
 }
 
 .section--confianza {
-    background-color: var(--color-gray-100);
+    background-color: var(--color-gray-100) !important;
 }
 
 .section--registro {
@@ -491,7 +511,7 @@ button {
 
 .section__description {
     font-size: var(--font-size-lg);
-    color: var(--color-gray-600);
+    color: var(--color-gray-700) !important;
     text-align: center;
     max-width: 700px;
     margin: 0 auto var(--spacing-xl);
@@ -530,7 +550,7 @@ button {
 }
 
 .feature-card {
-    background-color: var(--color-white);
+    background-color: var(--color-white) !important;
     padding: var(--spacing-lg);
     border-radius: var(--border-radius-lg);
     box-shadow: var(--shadow-md);
@@ -557,7 +577,7 @@ button {
 
 .feature-card__text {
     font-size: var(--font-size-base);
-    color: var(--color-gray-600);
+    color: var(--color-gray-700) !important;
 }
 
 .cta-section {
@@ -601,7 +621,7 @@ button {
 }
 
 .trust-card {
-    background-color: var(--color-white);
+    background-color: var(--color-white) !important;
     border-radius: var(--border-radius-lg);
     overflow: hidden;
     box-shadow: var(--shadow-md);
@@ -665,7 +685,7 @@ button {
 }
 
 .registro__content {
-    background-color: var(--color-white);
+    background-color: var(--color-white) !important;
     padding: var(--spacing-xl);
     border-radius: var(--border-radius-xl);
     box-shadow: var(--shadow-lg);
@@ -680,7 +700,7 @@ button {
 
 .registro__subtitle {
     font-size: var(--font-size-base);
-    color: var(--color-gray-600);
+    color: var(--color-gray-700) !important;
     margin-bottom: var(--spacing-lg);
 }
 
@@ -733,7 +753,7 @@ button {
 }
 
 .registro__benefits {
-    background-color: var(--color-white);
+    background-color: var(--color-white) !important;
     padding: var(--spacing-xl);
     border-radius: var(--border-radius-xl);
     box-shadow: var(--shadow-lg);
@@ -782,9 +802,13 @@ button {
    FOOTER
    ========================================= */
 .footer {
-    background-color: var(--color-gray-900);
-    color: var(--color-gray-300);
+    background-color: var(--color-gray-800) !important;
+    color: var(--color-white) !important;
     padding: var(--spacing-2xl) 0 var(--spacing-lg);
+}
+
+.footer, .footer * {
+    color: #fff !important;
 }
 
 .footer__content {
@@ -828,7 +852,7 @@ button {
 
 .footer__description {
     font-size: var(--font-size-base);
-    color: var(--color-gray-400);
+    color: var(--color-white) !important;
     line-height: 1.6;
 }
 
@@ -847,12 +871,12 @@ button {
 
 .footer__link {
     font-size: var(--font-size-base);
-    color: var(--color-gray-400);
+    color: #FFFFFF !important;
     transition: color var(--transition-fast);
 }
 
 .footer__link:hover {
-    color: var(--color-primary-light);
+    color: var(--color-secondary) !important;
 }
 
 .footer__social {
@@ -953,4 +977,8 @@ button {
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
     }
+}
+
+input[type="checkbox"]:checked {
+    accent-color: var(--color-primary) !important;
 }
